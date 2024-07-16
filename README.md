@@ -11,11 +11,12 @@
 
 # Installation
  To get started with the Music Application, follow these steps:
- 1. Clone the repository: git clone https://github.com/rugved1212/Sangeet.git
- 2. Open the project repository in android studio.
- 3. Connect to Firebase account.
- 4. Also Connect Realtime Database and Cloud Firestore.
- 5. Upload song using the another projects for server side operations like uploading or deleting the song from database.
+ 1. Clone the repository:
+    - git clone https://github.com/rugved1212/Sangeet.git
+ 3. Open the project repository in android studio.
+ 4. Connect to Firebase account.
+ 5. Also Connect Realtime Database and Cloud Firestore.
+ 6. Upload song using the another projects for server side operations like uploading or deleting the song from database.
     - https://github.com/rugved1212/SangeetMusicControlApplication.git
  7. Clone the above project repository and follow the same procedure.
 
