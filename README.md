@@ -11,7 +11,7 @@
 
 # Installation
  To get started with the Music Application, follow these steps:
- 1. Clone the repository: git clone https://github.com/rugved1212/sangeet.git
+ 1. Clone the repository: git clone https://github.com/rugved1212/Sangeet.git
  2. Open the project repository in android studio.
  3. Connect to Firebase account.
  4. Also Connect Realtime Database and Cloud Firestore.
