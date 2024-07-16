@@ -20,6 +20,9 @@
     - https://github.com/rugved1212/SangeetMusicControlApplication.git
  7. Clone the above project repository and follow the same procedure.
 
+# Build Apk
+ - The apk version of this project is in the following path: apk/app-debug.apk
+
 
 # ScreenShots
  ![1](https://github.com/user-attachments/assets/bc8f29fc-f05c-4ecc-a73b-eb0d66285e6c)
