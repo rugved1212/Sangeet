@@ -16,6 +16,8 @@
  3. Connect to Firebase account.
  4. Also Connect Realtime Database and Cloud Firestore.
  5. Upload song using the another projects for server side operations like uploading or deleting the song from database.
+    - https://github.com/rugved1212/SangeetMusicControlApplication.git
+ 7. Clone the above project repository and follow the same procedure.
 
 
 # ScreenShots
