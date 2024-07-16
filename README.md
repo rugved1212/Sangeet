@@ -23,6 +23,8 @@
 # Build Apk
  - The apk version of this project is in the following path: apk/app-debug.apk
 
+# YouTube
+ - Video Link: https://youtu.be/eLj5lOPGB1I
 
 # ScreenShots
  ![1](https://github.com/user-attachments/assets/bc8f29fc-f05c-4ecc-a73b-eb0d66285e6c)
