@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="7dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MatteBlack">
+
+        <ImageView
+            android:id="@+id/image_of_song"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:id="@+id/name_of_song"
+            android:layout_width="200dp"
+            android:layout_height="28dp"
+            android:text="MOYE MOYE"
+            android:textSize="17dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:ellipsize="marquee"
+            android:layout_toEndOf="@id/image_of_song"
+            android:layout_marginVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/name_of_artist"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="MOYE MOYE"
+            android:textSize="12dp"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:layout_alignStart="@id/name_of_song"
+            android:layout_below="@id/name_of_song"/>
+
+        <ImageButton
+            android:id="@+id/like_song"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/heart"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

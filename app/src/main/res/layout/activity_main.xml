@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_bottom"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/manage_song"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:layout_above="@id/nav_bottom"
+        android:visibility="visible">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/MatteBlack">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="15dp"
+                android:src="@drawable/default_music_background1"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:text=""
+                android:textSize="17dp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:ellipsize="marquee"
+                android:layout_toEndOf="@id/image"
+                android:layout_marginVertical="5dp"/>
+
+            <TextView
+                android:id="@+id/artist"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLines="1"
+                android:textSize="12dp"
+                android:ellipsize="marquee"
+                android:textColor="@color/white"
+                android:layout_alignStart="@id/name"
+                android:layout_below="@id/name"/>
+
+            <ImageButton
+                android:id="@+id/playbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/play"
+                android:layout_toStartOf="@id/list"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="5dp"/>
+
+            <ImageButton
+                android:id="@+id/list"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/playlist"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="15dp"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:backgroundTint="@color/MatteBlack"
+        app:itemRippleColor="@color/DarkSlateBlue"
+        app:labelVisibilityMode="selected"
+        app:itemTextAppearanceActiveBoldEnabled="false"/>
+
+
+</RelativeLayout>

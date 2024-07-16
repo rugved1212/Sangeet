@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MatteBlack"
+    tools:context=".Fragments.home_page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/home_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, Sir"
+                    android:textSize="35dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:layout_weight="4"/>
+
+                <ImageButton
+                    android:id="@+id/setting"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/settings"
+                    android:layout_gravity="center_vertical|end"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recently Played"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/lin1"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recent_song_played"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/recent"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recent_song_played"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Chill &#127881;"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chill_song_played"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/big"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chill_song_played"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="15dp"
+                android:text="Love &#128158;"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/love_song_played"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/love"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/rock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/love_song_played"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Rock &#38; Roll &#128378;"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rock_song_played"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/rock"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/spirit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spiritual  &#2384;"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_below="@id/rock_song_played"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/spiritual_song_played"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/spirit"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/sad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feel Alone &#129402;"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/spiritual_song_played"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sad_song_played"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/sad"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/recomm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommened"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/sad_song_played"
+                android:layout_margin="15dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recommened_song_played"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/recomm"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
